@@ -6,7 +6,7 @@ import { Posts } from "./components/Posts";
 
 function App() {
   const [open, setOpen] = useState(false);
-  const body = document.querySelector('body')|| null;
+  const body = document.querySelector('body')!;
   if(open){
     
     body.style.overflow = 'hidden';
