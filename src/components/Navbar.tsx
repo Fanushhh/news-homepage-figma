@@ -30,11 +30,11 @@ export const Navbar:React.FC<Props> = ({open, setOpen}) => {
                 <img src="/images/logo.svg" alt="website logo" />
             </div>
             <div>
-                <img className='lg:hidden' onClick={() => setOpen(true)} src="/images/icon-menu.svg" alt="hamburger icon" />
+                <img className='hover:cursor-pointer lg:hidden' onClick={() => setOpen(true)} src="/images/icon-menu.svg" alt="hamburger icon" />
             </div>
             <div className={`${open ? 'translate-x-0': 'translate-x-[100%] lg:translate-x-0 lg:h-auto'} flex flex-col transition-transform ease-in-out duration-200 absolute right-0 top-0 w-2/3 h-screen lg:h-auto bg-off-white p-8 gap-14 z-10 lg:static lg:items-center lg:justify-center  lg:gap-0 lg:px-0`}>
                 <div onClick={() => setOpen(false)} className="self-end">
-                    <img className='lg:hidden' src="images/icon-menu-close.svg" alt="close button" />
+                    <img className='hover:cursor-pointer lg:hidden' src="images/icon-menu-close.svg" alt="close button" />
                 </div>
                 <ul className="flex flex-col gap-6 justify-center lg:justify-end w-full lg:flex-row lg:gap-10 ">
                     <li><a href="">Home</a></li>
